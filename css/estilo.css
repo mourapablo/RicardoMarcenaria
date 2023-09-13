@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap');
+
+
+
+
+#interface p a {
+	
+	font-size: 30pt;
+	font-family: 'Alkatra', cursive;
+
+	color: #08123f;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.0);
+}
+
+div#interface p{
+	margin-top: -20px;
+}
+
+header#cabecalho {
+	height: 520px;
+	
+}
+
+div#interface {
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: auto;
+	height: 100px;
+	padding: 10px;
+	margin: -20px, auto, 0px,auto;
+	top: -20px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+	
+}
+
+nav#menu {
+	display: block;
+
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 45px;
+	left: 220px;
+	font-family: 'Alkatra', cursive;
+	color: #a62c16;
+	
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu li {
+	display: inline-block;
+	padding: 30px;
+	margin-top: 1px;
+	font-family: 'Alkatra', cursive;
+	color: #a62c16;
+	font-size: 15pt;
+	
+
+
+}
+
+
+a {
+	text-decoration: none;
+	color: #737b7e;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 1.0);
+	text-align: right;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.slide-show {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 10 auto;
+	text-align: center;
+	position: relative;
+	z-index: 101;
+	margin-top: 20px;
+ 	
+ 	
+}
+
+.slide-show::after {
+	content: "";
+	position: absolute;
+	z-index: 202;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	
+}
+
+.slide  {
+	opacity: 0;
+	display: block;
+	width: 100%;
+	position: absolute;
+	animation: galeria 9s infinite;
+	
+}
+
+.slide:nth-child(1){
+
+}
+.slide:nth-child(2){
+	animation-delay: 10s;
+	-webkit-animation-delay:12s;
+}
+
+.slide:nth-child(3){
+	animation-delay: 12s;
+	-webkit-animation-delay: 15s;
+}
+
+.slide:nth-child(4){
+	animation-delay:  14s;
+	-webkit-animation-delay: 17s;
+}
+
+@keyframes galeria {
+	33.33%{
+		opacity: 1;
+	}
+	66.66%{
+		opacity: 0;
+	}
+}
+
+#icons ul {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: normal 20px verdana, arial, tahoma, sans-serif;
+	position: absolute;
+	top: -10px;
+	left: 1000px;
+	overflow: hidden;
+	list-style: none;
+	text-transform: uppercase;
+
+
+}
+
+#icons ul li {
+	display: inline-block;
+	padding: 10px;
+	margin-top:12px;
+}
+
+#icons {
+	display: block;
+}	
+
+#icons ul li a {
+	
+	text-decoration: none;
+}
+
+#icons ul li:nth-child(1){
+	background-color: white;
+}
+
+#icons ul li:nth-child(2){
+	background-color: white;
+}
+
+#icons ul li:nth-child(3){
+	background-color: white;
+}
+
+#icons ul li:nth-child(4){
+	background-color: white;
+}
+
+#icons ul li span{
+
+
+}
+
+#icons ul li:hover {
+
+color: black;
+
+	
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+	width: 100%;
+}
+
+footer#rodape p {
+	text-align: center;
+	font-size: 15pt;
+	padding: 5px;
+}
+
+footer#rodape span{
+	color: black;
+	font-size: 15pt;
+
+}
+
+footer#rodape span:hover {
+	color: black;
+}
+
+aside#lateral {
+	display: block;
+	width: 600px;
+	float: left;
+	padding: 10px;
+	margin-top: 0px;
+	font-size: 12pt;
+	font-family: sans-serif;
+	
+	height: 485px;
+
+
+}
+
+aside#lateral p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+aside#lateral h1 {
+		font-family: 'FonteLogo' , sans-serif;
+		font-size: 20pt;
+		color: white;
+		margin-top: 9px;
+		text-align: center;
+		background-color: #606060;
+	}
+
+aside#lateral h2 {
+
+}
+
+section#corpo {
+	display: block;
+	width: 600px;
+	height: 500px;
+	float: left;
+	border-right: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+	padding-right:20px ;
+}
+
+aside#lateral p img {
+	position: absolute;
+	border-right: 1px solid rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+	left: 670px;
+	top: 270px;
+}
